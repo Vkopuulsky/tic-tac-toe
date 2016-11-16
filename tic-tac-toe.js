@@ -14,16 +14,29 @@ function square(){
   canvas.appendChild(rectangle)
   topLeftClicked = 1
 }
-var topLeftClicked = 0
-function square1(){
-  if(topLeftClicked == 0)
+var topLeftClickd = 0
+function square2(){
+  if(topLeftClickd == 0)
   var rectangle = document.createElementNS(namespace, "circle")
-  rectangle.setAttribute("cx", "105")
+  rectangle.setAttribute("cx", "155")
   rectangle.setAttribute("cy","70")
   rectangle.setAttribute("r", "20")
-  rectangle.setAttribute("fill", "gray")
-  rectangle.setAttribute("stroke", "gray")
+  rectangle.setAttribute("fill", "blue")
+  rectangle.setAttribute("stroke", "blue")
   var canvas = document.getElementById("game-board")
   canvas.appendChild(rectangle)
-  topLeftClicked = 1
+  topLeftClickd = 1
+}
+var topLeftClicker = 0
+function square3(){
+  if(topLeftClicker == 0)
+  var rectangle = document.createElementNS(namespace, "circle")
+  rectangle.setAttribute("cx", "245")
+  rectangle.setAttribute("cy","70")
+  rectangle.setAttribute("r", "20")
+  rectangle.setAttribute("fill", "red")
+  rectangle.setAttribute("stroke", "red")
+  var canvas = document.getElementById("game-board")
+  canvas.appendChild(rectangle)
+  topLeftClicker = 1
 }
