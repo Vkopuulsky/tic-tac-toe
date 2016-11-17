@@ -1,9 +1,13 @@
 // Write all your JavaScript code in this file!
 // You can use the namespace variable that's defined here.
 var namespace = "http://www.w3.org/2000/svg"
+var whosTurn = "Player1"
 var topLeftClicked = 0
 function square(){
-  if(topLeftClicked == 0)
+  if(topLeftClicked == 0){
+if(whosTurn == "Player1"){
+
+
   var rectangle = document.createElementNS(namespace, "circle")
   rectangle.setAttribute("cx", "65")
   rectangle.setAttribute("cy","70")
@@ -13,10 +17,26 @@ function square(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(rectangle)
   topLeftClicked = 1
+  whosTurn = "player2"
+}else{
+  var circle = document.createElementNS(namespace, "rect")
+  circle.setAttribute("x", "65")
+  circle.setAttribute("y", "70")
+  circle.setAttribute("width", "15")
+  circle.setAttribute("height", "15")
+  circle.setAttribute("fill", "red")
+  var canvas = document.getElementById("game-board")
+  canvas.appendChild(circle)
+  topLeftClicked = 1
+  whosTurn = "Player1"
 }
+}
+}
+
 var topLeftClickd = 0
 function square2(){
-  if(topLeftClickd == 0)
+  if(topLeftClickd == 0){
+    if(whosTurn == "Player1"){
   var rectangle = document.createElementNS(namespace, "circle")
   rectangle.setAttribute("cx", "155")
   rectangle.setAttribute("cy","70")
@@ -26,10 +46,28 @@ function square2(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(rectangle)
   topLeftClickd = 1
+  whosTurn = "player2"
+}else{
+  var circle = document.createElementNS(namespace, "rect")
+  circle.setAttribute("x", "155")
+  circle.setAttribute("y", "70")
+  circle.setAttribute("width", "15")
+  circle.setAttribute("height", "15")
+  circle.setAttribute("fill", "red")
+  var canvas = document.getElementById("game-board")
+  canvas.appendChild(circle)
+  topLeftClickd = 1
+  whosTurn = "Player1"
 }
+}
+}
+
 var topLeftClicker = 0
 function square3(){
-  if(topLeftClicker == 0)
+  if(topLeftClicker == 0){
+    var turn = "player1"
+    function square2(){
+    }
   var rectangle = document.createElementNS(namespace, "circle")
   rectangle.setAttribute("cx", "245")
   rectangle.setAttribute("cy","70")
@@ -39,4 +77,8 @@ function square3(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(rectangle)
   topLeftClicker = 1
+  turn = "player2"
+}else{
+  turn = "player1"
+}
 }
