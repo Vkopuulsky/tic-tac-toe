@@ -96,7 +96,7 @@ function square4(){
     if(whosTurn == "Player1"){
 var rectangle = document.createElementNS(namespace, "circle")
 rectangle.setAttribute("cx", "65")
-rectangle.setAttribute("cy","100")
+rectangle.setAttribute("cy","155")
 rectangle.setAttribute("r", "20")
 rectangle.setAttribute("fill", "gray")
 rectangle.setAttribute("stroke", "gray")
@@ -107,13 +107,100 @@ whosTurn = "player2"
 }else{
 var circle = document.createElementNS(namespace, "rect")
 circle.setAttribute("x", "50")
-circle.setAttribute("y", "85")
+circle.setAttribute("y", "145")
 circle.setAttribute("width", "30")
 circle.setAttribute("height", "30")
 circle.setAttribute("fill", "red")
 var canvas = document.getElementById("game-board")
 canvas.appendChild(circle)
 topLeftClicken = 1
+whosTurn = "Player1"
+}
+}
+}
+
+var topLeftClickeded = 0
+function square5(){
+  if(topLeftClickeded == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "155")
+rectangle.setAttribute("cy","155")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClickeded = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "140")
+circle.setAttribute("y", "145")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClickeded = 1
+whosTurn = "Player1"
+}
+}
+}
+
+var topLeftClickede = 0
+function square6(){
+  if(topLeftClickede == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "245")
+rectangle.setAttribute("cy","155")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClickede = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "230")
+circle.setAttribute("y", "145")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClickede = 1
+whosTurn = "Player1"
+}
+}
+}
+
+var topLeftClickeder = 0
+function square6(){
+  if(topLeftClickeder == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "245")
+rectangle.setAttribute("cy","155")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClickeder = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "230")
+circle.setAttribute("y", "145")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClickeder = 1
 whosTurn = "Player1"
 }
 }
