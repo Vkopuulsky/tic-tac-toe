@@ -41,8 +41,8 @@ function square2(){
   rectangle.setAttribute("cx", "155")
   rectangle.setAttribute("cy","70")
   rectangle.setAttribute("r", "20")
-  rectangle.setAttribute("fill", "blue")
-  rectangle.setAttribute("stroke", "blue")
+  rectangle.setAttribute("fill", "gray")
+  rectangle.setAttribute("stroke", "gray")
   var canvas = document.getElementById("game-board")
   canvas.appendChild(rectangle)
   topLeftClickd = 1
@@ -50,7 +50,7 @@ function square2(){
 }else{
   var circle = document.createElementNS(namespace, "rect")
   circle.setAttribute("x", "135")
-  circle.setAttribute("y", "60")
+  circle.setAttribute("y", "55")
   circle.setAttribute("width", "30")
   circle.setAttribute("height", "30")
   circle.setAttribute("fill", "red")
@@ -70,8 +70,8 @@ function square3(){
   rectangle.setAttribute("cx", "245")
   rectangle.setAttribute("cy","70")
   rectangle.setAttribute("r", "20")
-  rectangle.setAttribute("fill", "red")
-  rectangle.setAttribute("stroke", "red")
+  rectangle.setAttribute("fill", "gray")
+  rectangle.setAttribute("stroke", "gray")
   var canvas = document.getElementById("game-board")
   canvas.appendChild(rectangle)
   topLeftClicker = 1
@@ -201,6 +201,93 @@ circle.setAttribute("fill", "red")
 var canvas = document.getElementById("game-board")
 canvas.appendChild(circle)
 topLeftClickeder = 1
+whosTurn = "Player1"
+}
+}
+}
+
+var topLeftClickeden = 0
+function square7(){
+  if(topLeftClickeden == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "65")
+rectangle.setAttribute("cy","245")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClickeden = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "50")
+circle.setAttribute("y", "235")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClickeden = 1
+whosTurn = "Player1"
+}
+}
+}
+
+var topLeftClickedr = 0
+function square8(){
+  if(topLeftClickedr == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "155")
+rectangle.setAttribute("cy","250")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClickedr = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "140")
+circle.setAttribute("y", "235")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClickedr = 1
+whosTurn = "Player1"
+}
+}
+}
+
+var topLeftClickedrn = 0
+function square9(){
+  if(topLeftClickedrn == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "245")
+rectangle.setAttribute("cy","245")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClickedrn = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "230")
+circle.setAttribute("y", "230")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClickedrn = 1
 whosTurn = "Player1"
 }
 }
