@@ -20,10 +20,10 @@ if(whosTurn == "Player1"){
   whosTurn = "player2"
 }else{
   var circle = document.createElementNS(namespace, "rect")
-  circle.setAttribute("x", "65")
-  circle.setAttribute("y", "70")
-  circle.setAttribute("width", "15")
-  circle.setAttribute("height", "15")
+  circle.setAttribute("x", "50")
+  circle.setAttribute("y", "58")
+  circle.setAttribute("width", "30")
+  circle.setAttribute("height", "30")
   circle.setAttribute("fill", "red")
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
@@ -49,10 +49,10 @@ function square2(){
   whosTurn = "player2"
 }else{
   var circle = document.createElementNS(namespace, "rect")
-  circle.setAttribute("x", "155")
-  circle.setAttribute("y", "70")
-  circle.setAttribute("width", "15")
-  circle.setAttribute("height", "15")
+  circle.setAttribute("x", "135")
+  circle.setAttribute("y", "60")
+  circle.setAttribute("width", "30")
+  circle.setAttribute("height", "30")
   circle.setAttribute("fill", "red")
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
@@ -65,9 +65,7 @@ function square2(){
 var topLeftClicker = 0
 function square3(){
   if(topLeftClicker == 0){
-    var turn = "player1"
-    function square2(){
-    }
+    if(whosTurn == "Player1"){
   var rectangle = document.createElementNS(namespace, "circle")
   rectangle.setAttribute("cx", "245")
   rectangle.setAttribute("cy","70")
@@ -79,6 +77,44 @@ function square3(){
   topLeftClicker = 1
   turn = "player2"
 }else{
-  turn = "player1"
+  var circle = document.createElementNS(namespace, "rect")
+  circle.setAttribute("x", "230")
+  circle.setAttribute("y", "55")
+  circle.setAttribute("width", "30")
+  circle.setAttribute("height", "30")
+  circle.setAttribute("fill", "red")
+  var canvas = document.getElementById("game-board")
+  canvas.appendChild(circle)
+  topLeftClicker = 1
+  turn = "Player1"
+}
+}
+}
+var topLeftClicken = 0
+function square4(){
+  if(topLeftClicken == 0){
+    if(whosTurn == "Player1"){
+var rectangle = document.createElementNS(namespace, "circle")
+rectangle.setAttribute("cx", "65")
+rectangle.setAttribute("cy","100")
+rectangle.setAttribute("r", "20")
+rectangle.setAttribute("fill", "gray")
+rectangle.setAttribute("stroke", "gray")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(rectangle)
+topLeftClicken = 1
+whosTurn = "player2"
+}else{
+var circle = document.createElementNS(namespace, "rect")
+circle.setAttribute("x", "50")
+circle.setAttribute("y", "85")
+circle.setAttribute("width", "30")
+circle.setAttribute("height", "30")
+circle.setAttribute("fill", "red")
+var canvas = document.getElementById("game-board")
+canvas.appendChild(circle)
+topLeftClicken = 1
+whosTurn = "Player1"
+}
 }
 }
