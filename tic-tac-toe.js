@@ -90,6 +90,7 @@ function square3(){
 }
 }
 }
+
 var topLeftClicken = 0
 function square4(){
   if(topLeftClicken == 0){
@@ -172,35 +173,6 @@ circle.setAttribute("fill", "red")
 var canvas = document.getElementById("game-board")
 canvas.appendChild(circle)
 topLeftClickede = 1
-whosTurn = "Player1"
-}
-}
-}
-
-var topLeftClickeder = 0
-function square6(){
-  if(topLeftClickeder == 0){
-    if(whosTurn == "Player1"){
-var rectangle = document.createElementNS(namespace, "circle")
-rectangle.setAttribute("cx", "245")
-rectangle.setAttribute("cy","155")
-rectangle.setAttribute("r", "20")
-rectangle.setAttribute("fill", "gray")
-rectangle.setAttribute("stroke", "gray")
-var canvas = document.getElementById("game-board")
-canvas.appendChild(rectangle)
-topLeftClickeder = 1
-whosTurn = "player2"
-}else{
-var circle = document.createElementNS(namespace, "rect")
-circle.setAttribute("x", "230")
-circle.setAttribute("y", "145")
-circle.setAttribute("width", "30")
-circle.setAttribute("height", "30")
-circle.setAttribute("fill", "red")
-var canvas = document.getElementById("game-board")
-canvas.appendChild(circle)
-topLeftClickeder = 1
 whosTurn = "Player1"
 }
 }
